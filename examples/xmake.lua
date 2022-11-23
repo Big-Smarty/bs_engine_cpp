@@ -1,0 +1,7 @@
+target("triangle")
+  set_kind("binary")
+  add_files("./triangle/**.cpp")
+  add_includedirs("../include/", "../external/vkfw/include/")
+  add_deps("bs_engine_cpp")
+  add_packages("vulkan-hpp", "vulkan-memory-allocator")
+  add_cxflags("-g")
